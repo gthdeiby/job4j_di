@@ -21,7 +21,7 @@ public class BeforeAndAfterLoggingAspect {
         Object[] argsObj = joinPoint.getArgs();
         String args = Arrays.toString(argsObj);
         String methodName = signature.toShortString();
-        LOG.info("Вызван метод:  {}", methodName );
+        LOG.info("Вызван метод:  {}", methodName);
         LOG.info("аргументы: {}", args);
     }
 
